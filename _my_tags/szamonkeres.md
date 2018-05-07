@@ -1,4 +1,0 @@
----
-slug: szamonkeres
-name: Számonkérés
----

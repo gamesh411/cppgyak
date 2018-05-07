@@ -1,20 +1,90 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>C++ gyakorlat</title>
+    <description></description>
+    <link>https://gamesh411.github.io</link>
+    <atom:link href="https://gamesh411.github.io/cppgyak/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>2017/18/2 tavaszi félév első pluszminusz</title>
+        <description>A 2017/18/2 tavaszi félév első megíratott pluszminusz eredménye.</description>
+        <pubDate>Sun, 18 Mar 2018 00:00:00 +0100</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/2017-18-2-elso-pluszminusz</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/2017-18-2-elso-pluszminusz</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Harmadik pluszminusz</title>
+        <description>Az második megíratott pluszminusz eredménye.</description>
+        <pubDate>Sun, 10 Dec 2017 00:00:00 +0100</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/harmadik-pluszminusz</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/harmadik-pluszminusz</guid>
+      </item>
+    
+      <item>
+        <title>Altípusos polimorfizmus</title>
+        <description>Példa ami szemlélteti a dinamikus és statikus típus alapján való metódushívásokat.</description>
+        <pubDate>Mon, 20 Nov 2017 00:00:00 +0100</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/tizedik-gyakorlat</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/tizedik-gyakorlat</guid>
+      </item>
+    
+      <item>
+        <title>Második pluszminusz</title>
+        <description>Az második megíratott pluszminusz eredménye.</description>
+        <pubDate>Mon, 13 Nov 2017 00:00:00 +0100</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/masodik-pluszminusz</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/masodik-pluszminusz</guid>
+      </item>
+    
+      <item>
+        <title>Élettartam</title>
+        <description>A létrehozott objektumok élettartamát szemléltető példa.</description>
+        <pubDate>Mon, 06 Nov 2017 00:00:00 +0100</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/nyolcadik-gyakorlat</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/nyolcadik-gyakorlat</guid>
+      </item>
+    
+      <item>
+        <title>Funktorok</title>
+        <description>Egy konkrét feladat megoldása a gömbölyű zárójel operátor definiálásával.</description>
+        <pubDate>Mon, 23 Oct 2017 00:00:00 +0200</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/hetedik-gyakorlat</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/hetedik-gyakorlat</guid>
+      </item>
+    
+      <item>
+        <title>Típusinformációk nyomtatása</title>
+        <description>C++ nem szabványos segítség a típusinformációk kinyerésére.</description>
+        <pubDate>Mon, 16 Oct 2017 00:00:00 +0200</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/tipusinformacio</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/tipusinformacio</guid>
+      </item>
+    
+      <item>
+        <title>Input/Output másolás, STL</title>
+        <description>Az input átirányítás C++-ban STL segítségével.</description>
+        <pubDate>Mon, 09 Oct 2017 00:00:00 +0200</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/otodik-gyakorlat</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/otodik-gyakorlat</guid>
+      </item>
+    
+      <item>
+        <title>Első pluszminusz</title>
+        <description>Az első megíratott pluszminusz eredménye.</description>
+        <pubDate>Mon, 02 Oct 2017 00:00:00 +0200</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/elso-pluszminusz</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/elso-pluszminusz</guid>
+      </item>
+    
+      <item>
+        <title>Input/Output másolás</title>
+        <description>Az input átirányítás összehasonlítása C-ben és C++-ban.</description>
+        <pubDate>Mon, 25 Sep 2017 00:00:00 +0200</pubDate>
+        <link>https://gamesh411.github.io/cppgyak/posts/harmadik-gyakorlat</link>
+        <guid isPermaLink="true">https://gamesh411.github.io/cppgyak/posts/harmadik-gyakorlat</guid>
+      </item>
+    
   </channel>
 </rss>
